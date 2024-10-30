@@ -4,64 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Bio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin: 10px;
-            padding: 20px;
-            flex: 1 1 calc(30% - 40px);
-            text-align: center;
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: scale(1.05);
-        }
-        h2 {
-            margin: 0 0 10px;
-        }
-        .bio {
-            display: none; /* Initially hide the bio section */
-            margin-top: 10px;
-            color: #555;
-        }
-        button {
-            background: #007BFF;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/scripts.css" type="text/css">
 </head>
 <body>
 
 <header>
     <h1>Meet Our Team</h1>
+    <h2><!-- Mission Statement --></h2>
 </header>
 
 <div class="container">
@@ -79,9 +28,30 @@
     </div>
     <div class="card">
         <h2>Logan Honaker</h2>
+        <p><img class="logan" src ="img/Logan_and_Mia.png" alt="Mia and Logan sitting together on a couch"></p>
         <p>UI/UX Designer</p>
-        <button onclick="toggleBio('bio3')">Show Bio</button>
-        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+        <button onclick="toggleBio('loganbio')">Show Bio</button>
+        <p id="loganbio" class="loganbio">
+            Logan is a Senior at UNCC, pursuing a degree in computer science with a concentration in cybersecurity.</p>
+      
+        <div class="grid-container" id="grid-container">
+          <div class="grid-item"><img src="img/loganimg1.png" alt="Image 1"></div>
+          <div class="grid-item"><img src="img/loganimg2.png" alt="Image 2"></div>
+          <div class="grid-item"><img src="img/loganimg3.png" alt="Image 3"></div>
+          <div class="grid-item"><img src="img/loganimg4.png" alt="Image 4"></div>
+          <div class="grid-item center-text">Howdy Y'all</div>
+          <div class="grid-item"><img src="img/loganimg5.png" alt="Image 5"></div>
+          <div class="grid-item"><img src="img/loganimg6.png" alt="Image 6"></div>
+          <div class="grid-item"><img src="img/loganimg7.png" alt="Image 7"></div>
+          <div class="grid-item"><img src="img/loganimg8.png" alt="Image 8"></div>
+        </div>
+        <!-- Links -->
+        <p class="links">
+            <a href="https://www.linkedin.com/in/loganhonaker/" target="_blank" rel="noopener noreferrer">LinkedIn  <img src="img/digi.png" alt="favicon" class="icon"></a>
+            <a href="https://github.com/LoganHonaker" target="_blank" rel="noopener noreferrer">GitHub  <img src="img/digi.png" alt="favicon" class="icon"></a>
+            <a href="https://loganhonaker.github.io/" target="_blank" rel="noopener noreferrer">GitHub.io</a>
+        </p>
+        <!-- Links -->
     </div>
     <div class="card">
         <h2>Audy Vee</h2>
@@ -97,16 +67,7 @@
     </div>
 </div>
 
-<script>
-    function toggleBio(bioId) {
-        const bio = document.getElementById(bioId);
-        if (bio.style.display === "none" || bio.style.display === "") {
-            bio.style.display = "block";
-        } else {
-            bio.style.display = "none";
-        }
-    }
-</script>
+<script src="scripts/script.js"></script>
 
 </body>
 </html>

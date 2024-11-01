@@ -4,64 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Bio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin: 10px;
-            padding: 20px;
-            flex: 1 1 calc(30% - 40px);
-            text-align: center;
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: scale(1.05);
-        }
-        h2 {
-            margin: 0 0 10px;
-        }
-        .bio {
-            display: none; /* Initially hide the bio section */
-            margin-top: 10px;
-            color: #555;
-        }
-        button {
-            background: #007BFF;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/scripts.css" type="text/css">
 </head>
 <body>
 
 <header>
     <h1>Meet Our Team</h1>
+    <h2><!-- Mission Statement --></h2>
 </header>
 
 <div class="container">
@@ -73,16 +22,53 @@
     </div>
     <div class="card">
         <h2>Simon Aldridge</h2>
+        <p><img class="simon-image" src="img/bio_pic2.jpg" alt="Simon pic" ></p>
         <p>Backend Developer</p>
-        <button onclick="toggleBio('bio2')">Show Bio</button>
-        <p id="bio2" class="bio">Simon is a struggling Networks and Systems concentration CS major. He should've stuck with History.</p>
-        <img src="img/bio_pic2.jpg" alt="Simon pic" height="275" width="250" style="padding: 10;">
+        <button onclick="toggleBio('simonbio', 'simonGrid')">Show Bio</button>
+        <p id="simonbio" class="bio" style="display:none;">
+            Simon is a struggling Networks and Systems concentration CS major. He should've stuck with History.</p>
+         <!-- Simon Images -->
+        <div class="grid-container" id="simonGrid" style="display: none;">
+            <div class="grid-item"><img src="img/simon7.webp" alt="Simon Image 7"></div>
+            <div class="grid-item"><img src="img/simon1.jpg" alt="Simon Image 1"></div>
+            <div class="grid-item"><img src="img/simon4.jpg" alt="Image 4"></div>
+            <div class="grid-item"><img src="img/simon2.jpg" alt="Simon Image 2"></div>
+            <div class="grid-item"><img src="img/simon6.JPG" alt="Simon Image 6"></div>
+            <div class="grid-item"><img src="img/simon3.jpg" alt="Simon Image 3"></div>
+            <div class="grid-item"><img src="img/simon5.jpg" alt="Simon Image 5"></div>
+            <div class="grid-item"><img src="img/simon8.png" alt="Simon Image 8"></div>
+        </div>    
+         <!-- Links -->
+        <p class="links">
+            <a href="https://www.linkedin.com/in/simon-aldridge-332175295/" target="_blank" rel="noopener noreferrer">LinkedIn<img src="img/digi.png" alt="favicon" class="icon"></a>
+            <a href="https://github.com/SimonAldridge97" target="_blank" rel="noopener noreferrer">GitHub<img src="img/digi.png" alt="favicon" class="icon"></a>
+        </p>
     </div>
     <div class="card">
         <h2>Logan Honaker</h2>
+        <p><img class="logan" src ="img/Logan_and_Mia.png" alt="Mia and Logan sitting together on a couch"></p>
         <p>UI/UX Designer</p>
-        <button onclick="toggleBio('bio3')">Show Bio</button>
-        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+        <button onclick="toggleBio('loganbio', 'loganGrid')">Show Bio</button>
+        <p id="loganbio" class="bio" style="display:none;">
+            Logan is a Senior at UNCC, pursuing a degree in computer science with a concentration in cybersecurity.</p>
+         <!-- Logan Images -->
+        <div class="grid-container" id="loganGrid" style="display:none;">
+          <div class="grid-item"><img src="img/loganimg1.png" alt="Image 1"></div>
+          <div class="grid-item"><img src="img/loganimg2.png" alt="Image 2"></div>
+          <div class="grid-item"><img src="img/loganimg3.png" alt="Image 3"></div>
+          <div class="grid-item"><img src="img/loganimg4.png" alt="Image 4"></div>
+          <div class="grid-item center-text">Howdy Y'all</div>
+          <div class="grid-item"><img src="img/loganimg5.png" alt="Image 5"></div>
+          <div class="grid-item"><img src="img/loganimg6.png" alt="Image 6"></div>
+          <div class="grid-item"><img src="img/loganimg7.png" alt="Image 7"></div>
+          <div class="grid-item"><img src="img/loganimg8.png" alt="Image 8"></div>
+        </div>
+        <!-- Links -->
+        <p class="links">
+            <a href="https://www.linkedin.com/in/loganhonaker/" target="_blank" rel="noopener noreferrer">LinkedIn  <img src="img/digi.png" alt="favicon" class="icon"></a>
+            <a href="https://github.com/LoganHonaker" target="_blank" rel="noopener noreferrer">GitHub  <img src="img/digi.png" alt="favicon" class="icon"></a>
+            <a href="https://loganhonaker.github.io/" target="_blank" rel="noopener noreferrer">GitHub.io</a>
+        </p>
     </div>
     <div class="card">
         <h2>Audy Vee</h2>
@@ -94,20 +80,11 @@
         <h2>Evan Stark</h2>
         <p>UI/UX Designer</p>
         <button onclick="toggleBio('bio3')">Show Bio</button>
-        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+        <p id="bio4" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
     </div>
 </div>
 
-<script>
-    function toggleBio(bioId) {
-        const bio = document.getElementById(bioId);
-        if (bio.style.display === "none" || bio.style.display === "") {
-            bio.style.display = "block";
-        } else {
-            bio.style.display = "none";
-        }
-    }
-</script>
+<script src="scripts/script.js"></script>
 
 </body>
 </html>

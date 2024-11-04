@@ -1,0 +1,157 @@
+/* 
+I changed some of the color scheme, edit it if y'all don't like it
+I also made this a seperate css file, because it's better than a wall of text on the index
+-Logan
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c110a;
+    color: #9b2915;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #555;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+.container {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {
+    background: #e4d6a7;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 calc(30% - 40px);
+    text-align: center;
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+h2 {
+    margin: 0 0 10px;
+}
+.bio {
+    display: none; /* Initially hide the bio section */
+    margin-top: 10px;
+    color: #555;
+}
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: #0056b3;
+}
+.table {
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+}
+
+
+/* Logan's Edits */
+/* This is some stuff I wrote for my block, feel free to copy and adjust if desired */
+/* This is for my profile image */
+.logan {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 15px 0;
+}
+/* This is sizing for the favicon */
+.icon {
+    padding-top: 10px;
+    width: 15px;
+    height: 15px;
+}
+/* I'm not sure why, but the bio button was showing all bios with my changes, this is a workaround */
+.loganbio {
+    padding-top: 15px;
+    display: none;
+    margin-top: 10px;
+    color: #555;
+}
+/* This is to get rid of the default blue and purple hyperlinks */
+.links a {
+    color: #9b2915; /* Set your desired link color */
+}
+
+.links a:hover {
+    color: #9b2915; /* Keep the same color on hover */
+}
+
+.links a:visited {
+    color: #9b2915; /* Keep the same color when visited */
+}
+
+.links a:active {
+    color: #9b2915; /* Keep the same color when active */
+}
+
+
+/* v grid image block with center spot for text v */
+#grid-container {
+    display: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%; /* Set width to 100% to allow for centering */
+    max-width: 300px; /* Set a maximum width if desired */
+    margin: 0 auto; /* Center the grid container */
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+    font-size: 18px;
+}
+
+.center-text {
+    background-color: #e4d6a7;
+    font-weight: bold;
+    color: #9b2915;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ^ End Image Block ^ */
+/* End Logan's edits */
+
+/*Simon edits*/
+.simon-image {
+    width: 250px; /* or whatever size you prefer */
+    height: 250px; /* keep it square for the circle effect */
+    border-radius: 50%; /* this makes the image circular */
+    object-fit: cover; /* this ensures the image covers the entire area */
+}
+.simonbio {
+    padding-top: 15px;
+    display: none;
+    margin-top: 10px;
+    color: #555;
+}

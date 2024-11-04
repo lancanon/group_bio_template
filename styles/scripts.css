@@ -155,3 +155,17 @@ button:hover {
     margin-top: 10px;
     color: #555;
 }
+
+/*Audy edits*/
+.audy-img {
+    width: 250px; /* or whatever size you prefer */
+    height: 250px; /* keep it square for the circle effect */
+    border-radius: 50%; /* this makes the image circular */
+    object-fit: cover; /* this ensures the image covers the entire area */
+}
+.audy-bio {
+    padding-top: 15px;
+    display: none;
+    margin-top: 10px;
+    color: #555;
+}
